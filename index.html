@@ -655,11 +655,7 @@
 		penaReduzir = Pena * parseInt(penaRe) / 100;
         var limite = Pena - penaReduzir;
         var valorFF = '';
-        if(Pena > 180){
-            document.getElementById("pena").value = 180;
-        }else{
-		    document.getElementById("pena").value = Pena - penaReduzir;
-        }
+        document.getElementById("pena").value = Pena - penaReduzir;
 		document.getElementById("multa").value = "R$" + Multa.toLocaleString('pt-BR', { minimumFractionDigits: 2 }); 
 		if (isNaN(Fianca) || Vmandado.checked) {
 			document.getElementById("fianca").value = "SEM FIANÇA";
